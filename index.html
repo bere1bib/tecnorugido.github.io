@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoRugido</title>
+    <link rel="shortcut icon" href="img/logoTec.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+    <section class="contenedor-principal">
+
+        <!--<div class="form-acceso">
+            <div class="form-overlay"></div>
+            <div class="form-acceso-datos">
+                <div class="form-encabezado">
+                    <span class="ingresar-encabezado">Acceder</span>
+                    <span class="register-encabezado">Registrarse</span>
+                </div>
+                <div class="contenedor-formulario">
+                    <form class="ingresar">
+                        <input type="email" placeholder="email" class="login-email" required>
+                        <input type="password" placeholder="Contraseña" class="login-password" required>
+                        <input type="submit" value="Ingresar" class="form-btn ingresar-btn">
+                    </form>
+                    <form class="register">
+                        <input type="text" placeholder="Nombre de Usuario" class="register-name" required minlength="2"
+                            maxlength="12">
+                        <input type="email" placeholder="email" class="register-email" required>
+                        <input type="password" placeholder="Contraseña" class="register-password" required
+                            minlength="4">
+                        <input type="password" placeholder="Confirma tu contraseña" class="register-c-password" required
+                            minlength="4">
+                        <input type="submit" value="Registrarse" class="form-btn registrar-btn">
+                    </form>
+                </div>
+            </div>
+        </div>-->
+
+        <!-- ENCABEZADO DE LA PÁGINA===-->
+        <div class="header">
+            <nav class="barra-nav">
+                <div class="logo"><img src="img/logoTec.png" alt="logo"></div>
+                <div class="titulo">TECNORUGIDO<br><span>Descubre ITP: Tu guía estudiantil</span></div>
+                <div class="usuario"><img id="logo" src="img/user.png" alt="usuario"></div>
+            </nav>
+        </div>
+        <!-- BARRA DE NAVEGACION===-->
+        <div class="navegador">
+            <nav>
+                <ul>
+                    <li class="nav-btn nav-inicio border-bottom"><i class="fa-solid fa-house-chimney"></i>
+                        <p><a href="#"><br>Inicio</a></p>
+                    </li>
+                    <li class="nav-btn"><i class="fa-solid fa-book-open"></i>
+                        <p><a href="#">Plan de Estudios</a></p>
+                    </li>
+                    <li class="nav-btn"><i class="fa-solid fa-globe"></i>
+                        <p><a href="#">
+                                <p>Sitios Web
+                            </a></p>
+                    </li>
+                    <li class="nav-btn"><i class="fa-solid fa-clipboard-list"></i>
+                        <p><a href="#">Trámites</a></p>
+                    </li>
+                    <li class="nav-btn"><i class="fa-solid fa-calendar-days"></i>
+                        <p><a href="#">Información General</a></p>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="header-box">
+        </div>
+
+        <!-- PAGINA DE INICIO===-->
+
+        <div class="inicio-caja show-display ">
+            <div class="cabeza-inicio-caja">
+                <h1 class="bienvenido">INSTITUTO TECNOLÓGICO DE PUEBLA</h1>
+            </div>
+            <!-- detalles de  //////////////////////// -->
+            <div class="itp-detalles">
+                <div class="sobre-itp">
+                    <div>
+                        <h1>Ingeniería en Tecnologías de la Información y Comunicaciones</h1>
+                        Formar profesionistas capaces de desarrollar, integrar y administrar tecnologías de la
+                        información y comunicaciones que contributan a la productividad y al logro de los objetivos
+                        estratégicos de las organizaciones en un entorno globalizado; caracterizandose por ser líderes,
+                        críticos, competentes, éticos y con visión emprendedora, comprometidos con el desarrollo
+                        sustentable;
+
+                    </div>
+                </div>
+                <div class="extra-itp">
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PESTAÑA DE PLAN DE ESTUDIOS-->
+
+        <div class="reticula show-display">
+            <div class="tituloPlan">
+                <h1>PLAN DE ESTUDIOS</h1>
+            </div>
+            <nav class="reticula-nav types">
+                <ul class="years-list">
+                    <li><a href="#" id="primer-grado" class="grado">1er <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">2do <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">3er <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">4to <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">5to <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">6to <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">7mo <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">8vo <p>Semestre</p></a></li>
+                    <li><a href="#" class="grado">9no <p>Semestre</p></a></li>
+                </ul>
+            </nav>
+
+            <!-- CURSO ===================== -->
+            <!-- Primer-Semestre======================= -->
+            <div id="primer-grado" class="cursos primer-grado">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Cálculo Diferencial <span><br>ACF-0901</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Fundamentos de Programación <br><span>AEF-1032</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Matemáticas Discretas I <br><span>TIF-1019</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Introducción a las TIC'S <span><br>TIP-1017</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Taller de Ética <span><br>ACA-0907</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Fundamentos de Investigación <span><br>ADC-0906</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+
+            </div>
+            <!-- Segundo semestre========================= -->
+            <div id="second-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/calculoInt.png" alt="CalculoIntegral">
+                    <h3>Cálculo Integral <span><br>ACF-0902</span></h3>
+                    <p>Se estudia el proceso de integración o antiderivación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/poo.jpg" alt="Programacion">
+                    <h3>Programación Orientada a Objetos <br><span>AEB-1054</span></h3>
+                    <p>Se enseñan los conceptos básicos de la POO y sean capaces de aplicarlos en el desarrollo de
+                        software.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisII.jpg" alt="MatematicasDiscretas">
+                    <h3>Matemáticas Discretas II <br><span>TIF-1020</span></h3>
+                    <p>Se centra en el estudio de estructuras matemáticas discretas más avanzadas, como grafos, árboles
+                        y álgebra booleana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/algebra.jpg" alt="Algebra">
+                    <h3>Algebra Lineal <span><br>ACF-0903</span></h3>
+                    <p>Se estudian ecuaciones y sistemas de ecuaciones lineales, matrices, espacios vectoriales y formas
+                        cuadráticas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/conta.jpg" alt="Contabilidad">
+                    <h3>Contabilidad y Costos <span><br>TIF-1009</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/probabilidad.png" alt="Probabilidad">
+                    <h3>Probabilidad y Estadística <span><br>AEF-1052</span></h3>
+                    <p>Enseñar e centra en el estudio de estructuras matemáticas discretas más avanzadas, como grafos,
+                        árboles y álgebra booleana.
+                    </p>
+                </div>
+            </div>
+            <!--third-year=========================== -->
+            <div id="third-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/comunicacione.jpg" alt="Comunicaciones">
+                    <h3>Matemáticas Aplicadas a Comunicaciones <span><br>TIE-1018</span></h3>
+                    <p>Aplicar los conceptos matemáticos necesarios para comprender los fundamentos de las
+                        comunicaciones.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/estructura.jpg" alt="Estructura">
+                    <h3>Estructura y Organización de Datos<br><span><br>TID-1012</span></h3>
+                    <p>Aplicacióon de estructuras de organización de datos como pilas, colas, matrices y grafos.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisII.jpg" alt="MatematicasDiscretas">
+                    <h3>Matemáticas Discretas II <br><span>TIF-1021</span></h3>
+                    <p>Matemáticas discretas II aborda temas de teoría de grafos, criptografía y algoritmos.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/desarrollo.jpg" alt="Desarrollo">
+                    <h3>Desarrollo Sustentable <span><br>ACD-0908</span></h3>
+                    <p>Se trata de dar a conocer como satisfacer las necesidades del presente sin comprometer la
+                        capacidad de las generaciones futuras para satisfacer las suyas</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/electricidad.jpg" alt="Electricidad">
+                    <h3>Electricidad y Magnetismo<span><br>TIC-1011</span></h3>
+                    <p> Fundamentos físicos para las TICS. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/fund redes.jpg" alt="Redes">
+                    <h3>Fundamentos de Redes<span><br>TIF-1013</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+            <!-- fourth-year========================== -->
+            <div class="cursos" id="fourth-year">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Análisis de Señales y Sistemas de Comunicación <span><br>TID-1004</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Fundamentos de Base de Datos <br><span>AEF-1031</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Sistemas Operativos I <br><span>AEC-1061</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Desarrollo de Emprendedores <span><br>TID-10107</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Circuitos Eléctricos y Electrónicos <span><br>TID-1008</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Redes de Computadoras<span><br>TIF-1025</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+            <!-- fifth-year=========================== -->
+            <div id="fifth-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Telecomunicaciones <span><br>TIF-1029</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Taller de Bae de Datos <br><span>AEH-1063</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Programación II<br><span>TIB-1024</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+
+                <div class="materia">/ <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Sistemas Operativos II<span><br>AED-1062</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Arquitectura de Computadoras<span><br>TIC-1005</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Redes Emergentes<span><br>TIF-1026</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+            <!-- sixth-year======================== -->
+            <div id="sixth-year" class="cursos">
+
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Tecnologías Inalámbricas <span><br>TIC-1028</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Base de Datos Distribuidas <br><span>TIF-1007</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Programación WEB<br><span>AEB-1055</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Ingeniería de Software <span><br>TIC-1014</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Interacción Humano Computadora<span><br>TIH-1016</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Administración y Seguridad de Redes<span><br>TIF-1003</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+            <!-- seven-year=========================== -->
+            <div id="eight-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Taller de Investigación I <span><br>ACA-0909</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Negocios Electrónicos I<br><span>TIC-1022</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Desarrollo de Aplicaciones para Dispositivos Móviles <br><span>AEB-1011</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Taller de Ingeniería de Software<span><br>TIC-1027</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Administración Gerencial <span><br>TIC-1002</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Servicio Social<span><br></span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+
+            <!-- eight-year=========================== -->
+            <div id="eight-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Taller de Investigación II <span><br>ACA-0910</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Negocios Electrónicos II <br><span>TIC-1023</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Auditoría en Tecnologías de la Información <br><span>TIC-1006</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Ingeniería del Conocimiento <span><br>TIC-1015</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Administración de Proyectos <span><br>TIF-1001</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Internet de las Cosas Avanzado <span><br>ICB-2206</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+            <!-- nine-year=========================== -->
+            <div id="nine-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Sistemas WEB con Servlets y Oracle<span><br>ICV-2201</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Cubos OLAP para Ineligencia Empresarial<br><span>ICV-2202</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Fundamentos de Internet de las Cosas<br><span>ICB-2203</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Ciberseguridad <span><br>ICB-2204</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Programación de Aplicaciones para Ambientes Distribuidos <br><span>ICV-2205</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Residencia Profesional <span></span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+            <!-- ten-year=========================== -->
+            <div id="ten-year" class="cursos">
+                <div class="materia">
+                    <img src="img/materias/calculoDif.jpg" alt="CalculoDiferencial">
+                    <h3>Cálculo Diferencial <span>ACF-0901</span></h3>
+                    <p>Cálculo diferencial I es una materia que introduce a los estudiantes al cálculo diferencial,
+                        una rama de las matemáticas que estudia el cambio, límites y derivadas.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/progra.jpg" alt="Programacion">
+                    <h3>Fundamentos de Programación <br><span>AEF-1032</span></h3>
+                    <p>Fundamentos de programación es una materia que introduce a los estudiantes a la programación
+                        informática. El objetivo de esta materia es proporcionar a los estudiantes las bases necesarias
+                        para poder programar en cualquier lenguaje de programación.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/matDisI.jpg" alt="MatematicasDiscretas">
+                    <h3>Matemáticas Discretas I <br><span>TIF-1019</span></h3>
+                    <p>Matemáticas discretas I es una materia que introduce a los estudiantes a la matemática
+                        discreta, una rama de las matemáticas que estudia los conjuntos finitos o infinitos numerables.
+                    </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/TICS.jpeg" alt="tics">
+                    <h3>Introducción a las TIC'S <span><br>TIP-1017</span></h3>
+                    <p>El objetivo de esta materia es que los estudiantes comprendan los conceptos básicos de las TIC y
+                        sus aplicaciones en diferentes ámbitos de la vida.</p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/ETICA.jpg" alt="etica">
+                    <h3>Taller de Ética <span>ACA-0907</span></h3>
+                    <p>Taller de ética es una materia de aprendizaje y reflexión sobre los principios morales que rigen
+                        la conducta humana. </p>
+                </div>
+                <div class="materia">
+                    <img src="img/materias/investigacion.jpg" alt="investigacion">
+                    <h3>Fundamentos de Investigación <span>ADC-0906</span></h3>
+                    <p> Materia que introduce a los estudiantes a los conceptos básicos de la investigación científica.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PESTAÑA DE SITIOS-->
+        <div class="web-caja show-display ">
+            <div class="cabeza-cita-caja">
+                <h1>SITIOS WEB</h1>
+            </div>
+            <hr>
+            <div class="extra-itp">
+                <div class="mas">
+                    <i class="fa-solid fa-desktop"></i>
+                    <a href="http://sie.itpuebla.edu.mx/intertec/index.html">SIE</a>
+                    <p> Consulta tu horario, Kardex y solicita servicios o tramites aquí</p>
+                </div>
+                <div class="mas">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <a href="https://sitec.puebla.tecnm.mx/">SITEC</a>
+                    <p> Aquí puedes cargar materias, consultar tu avance de ciclo y reinscribirte</p>
+                </div>
+
+                <div class="mas">
+                    <i class="fa-solid fa-language"></i>
+                    <a href="http://siecle.itpuebla.edu.mx/">SIE IDIOMAS</a>
+                    <p> Aquí puedes cargar idiomas, como inglés, alemán o francés</p>
+                </div>
+
+                <div class="mas">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <a href="https://cle.puebla.tecnm.mx/acceso/">SITEC IDIOMAS</a>
+                    <p> Consulta aquí tu avance de idiomas, horario y kardex de idiomas</p>
+                </div>
+                <div class="mas">
+                    <i class="fa-solid fa-volleyball"></i>
+                    <a href="https://actividades.puebla.tecnm.mx/">SITEC EXTRAESCOLARES</a>
+                    <p> Carga cursos culturales y deportivos aquí para obtener créditos complementarios</p>
+                </div>
+            </div>
+            <div class="cabeza-cita-caja">
+                <h1>REDES SOCIALES</h1>
+            </div>
+            <hr>
+            <div class="extra-itp">
+                <div class="mas">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/TECNMcampusPuebla?mibextid=ZbWKwL">TECNM PUEBLA</a>
+                    <p>Síguenos en Facebook para conocer las noticias y avisos diarios</p>
+                </div>
+                <div class="mas">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <a href="https://instagram.com/tecnm_puebla_oficial?igshid=NzZlODBkYWE4Ng==">TECNM PUEBLA</a>
+                    <p>Síguenos en tiktok y conoce los eventos que ocurren en el ITP</p>
+                </div>
+
+                <div class="mas">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.tiktok.com/@tecpueblaoficial?_t=8hQwROBZz30&_r=1">TECNM PUEBLA</a>
+                    <p> Síguenos en instagram para conocer lo que ocurre día a día en el ITP</p>
+                </div>
+
+                <div class="mas">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100057736536487&mibextid=ZbWKwL">ING TICS</a>
+                    <p>Consulta aquí los avisos de la carrera de Ingeniería en Tic's</p>
+                </div>
+
+                <div class="mas">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <a href="https://www.facebook.com/IdiomasTecnologicodepUebla?mibextid=ZbWKwL">IDIOMAS ITP</a>
+                    <p>Conoce los avisos más importantes del área de idiomas</p>
+                </div>
+                <div class="mas">
+                    <i class="fa-solid fa-volleyball"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100063864618184&mibextid=ZbWKwL">ITP
+                        EXTRAESCOLARES</a>
+                    <p> Carga cursos culturales y deportivos aquí para obtener créditos complementarios</p>
+                </div>
+
+                <div class="mas">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/cesacampuspuebla?mibextid=ZbWKwL">CESA</a>
+                    <p>Sigue al Comité de Alumnos para más información escolar</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- PESTAÑA TRAMITES-->
+        <div class="tramites show-display">
+
+            <nav class="tramites-nav types">
+                <ul class="years-list">
+                    <li><a href="#" id="becas" class="tramite">BECAS</a></li>
+                    <li><a href="#" class="tramite">CRÉDITOS COMPLEMENTARIOS</a></li>
+                    <li><a href="#" class="tramite">IDIOMAS</a></li>
+                </ul>
+            </nav>
+            <div class="panel becas ">
+                <div class="contenedor">
+                    <div class="cabeza-cita-caja">
+                        <h1>BECAS</h1>
+
+                    </div>
+                    <hr>
+                    <div class="galeria">
+                        <div class="tarjetas-deptos">
+                            <div class="tarjeta">
+                                <img src="img/1.png" alt="economica">
+                                <div class="intro">
+                                    <h1>Económica</h1>
+                                    <p>Para obtener estabeca deberas presentar un estudio socioeconómico, de ser
+                                        aprobado
+                                        serás beneficiario.</p>
+                                </div>
+
+                            </div>
+                            <div class="tarjeta">
+                                <img src="img/5.png" alt="academica">
+                                <div class="intro">
+                                    <h1 style="font-size:25px">Académica</h1>
+                                    <p>Si tienes un promedio mayor a 91 y no reprobaste materias, esta beca es para ti.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="tarjeta">
+                                <img src="img/3.png" alt="cultural">
+                                <div class="intro">
+                                    <h1>Extraescolar</h1>
+                                    <p>Esta beca está disponible si estas en alguna actividad extraescolar
+                                        representativa
+                                        del ITP.</p>
+                                </div>
+
+                            </div>
+                            <div class="tarjeta">
+                                <img src="img/4.png" alt="idiomas">
+                                <div class="intro">
+                                    <h1>Idiomas</h1>
+                                    <p>Beca dirigida a estudiantes que quieran cursar algún Idioma en el ITP.</p>
+                                </div>
+
+                            </div>
+                            <div class="tarjeta">
+                                <img src="img/2.png" alt="jovenes">
+                                <div class="intro">
+                                    <h1>JCEF</h1>
+                                    <p>Beca externa al ITP, la elección de esta beca depende de una organización
+                                        gubernamental</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="info-cita-caja">
+                    <h1>REQUISITOS PARA OBTENER UNA BECA</h1>
+                    <ul>
+                        <li> Ser alumno REGULAR y VIGENTE del Instituto Tecnológico de Puebla</li>
+                        <li> No contar con alguna otra beca al momento de solicitar una</li>
+                        <li> Cumplir con la documentación de la convocatoria a seguir</li>
+                    </ul>
+                    <br>
+                    <h1>PARA MÁS INFORMACIÓN PUEDES CONSULTAR:</h1>
+                    <br>
+                    <p><i class="fa-brands fa-facebook"></i> <a
+                            href="https://www.facebook.com/itp.becas.9?mibextid=ZbWKwL">ITP BECAS</a></p>
+                    <p><i class="fa-brands fa-facebook"></i> <a
+                            href="https://www.facebook.com/cesacampuspuebla?mibextid=ZbWKwL">CESA Instituto Tecnológico
+                            de
+                            Puebla</a></p>
+                    <p><i class="fa-solid fa-globe"></i> <a
+                            href="https://www.gob.mx/becasbenitojuarez/articulos/becas-elisa-acuna/">Becas Benito
+                            Juárez</a>
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div class="contenedor panel">
+
+                <hr>
+
+                <div class="info-cita-caja">
+                    <h1>¿Qué son los créditos complementarios?</h1>
+                    <p>Los créditos complementarios constan de 5 créditos adicionales a la retícula del estudiante,
+                        mismos que pueden ser obtenidos de actividades CULTURALES, DEPORTIVAS o ACADÉMICAS</p><br>
+                    <p><b>ACADÉMICAS:</b>Puedes obtener créditos de este tipo al asistir a conferencias, cursos o
+                        talleres propuestos por el ITP, además de cursos MOOC.</p>
+                    <p><b>CULTURALES:</b>Para obtener un crédito cultural se pueden cargar actividades culturales
+                        (Círculo de lectura, Dibujo, Fotografía, etc.), formar parte de un grupo representativo o
+                        participar en actividades culturales como concurso de ofrendas, calaveritas literartias,etc,</p>
+                    <p><b>DEPORTIVOS:</b>Estos créditos se obtienen al inscribirse en alguna actividad deportiva o grupo
+                        deportivo representativo del ITP</p>
+                    <p style="color: red;"><i class="fa-solid fa-circle-exclamation"></i> IMPORTANTE:Debes acreditar 5
+                        créditos en total y al menos un crédito por acada tipo de actividad </p>
+                    <br>
+                    <h1>¿Qué hago si ya complete mis 5 créditos complementarios?</h1>
+                    <p>Una vez completados los 5 créditos complementarios deberás esperar a que abran la convocatoria de
+                        <b>Liberación de créditos complementarios</b>. En resumen, debes:
+                    </p><br>
+                    <p>1. Tomar captura de los créditos complementarios acreditados en el<b><a
+                                href="https://actividades.puebla.tecnm.mx/"> SITEC de Actividades Extraescolares</a></b>
+                    </p>
+                    <p>2. Presentar la captura de pantalla con el Coordinador de la Carrera de Tic's</p>
+                    <p>3. Recoger la <b>Carta de Liberación de Créditos Complementarios </b>en la fecha acordada</p>
+                    <br>
+                    <h1>PARA MÁS INFORMACIÓN PUEDES CONSULTAR:</h1>
+                    <br>
+                    <p><i class="fa-brands fa-facebook"></i> <a
+                            href="https://www.facebook.com/profile.php?id=100063864618184&mibextid=ZbWKwL">ITP
+                            ACTIVIDADES EXTRAESCOLARES</a></p>
+                    <p><i class="fa-solid fa-globe"></i> <a href="https://actividades.puebla.tecnm.mx/">SITEC
+                            ACTIVIDADES EXTRAESCOLARES</a>
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="contenedor panel">
+
+                <hr>
+
+                <div class="info-cita-caja">
+                    <h1>¿Porqué tomar un Idioma?</h1>
+                    <p>Acreditar uno de los idiomas ofrecidos por el Instituto Tecnológico de Puebla es un requisito
+                        para la titulación de cualquier estudiante, en la mayoría de los casos es necesario cursar 5 cursos del idioma. </p><br>
+                    <h1>¿Como tomar un Idioma?</h1>
+                    <p>1. Seleccionar el idioma que se desa cursar</p>
+                    <p>2. En caso de contar con conocimiento del idioma se podrá presentar un<b> Examen de Ubicación </b></p>
+                    <p>3. Consultar y elegir un horario de acuerdo al idioma</p>
+                    <p>4. Cargar un idioma en el <b><a href="http://siecle.itpuebla.edu.mx/">SITEC CLE </a></b>
+                    <p>5. Acreditar os cursos necesarios hasta finalizar </a></b>
+                        para la titulación de cualquier estudiante, en la mayoría de los casos es necesario cursar 5 cursos del idioma. </p><br>
+                        <p>6. Recoger la <b>Carta de Acreditacion de Lengua Extranjera </b>en la fecha acordada</p>
+                        <h1>¿Cuándo tomar un idioma?</h1>
+                    
+                    <p><b>VERANO:</b>En verano puedes tomar un nivel del idioma, asistiendo 2 horas y media 5 días a la semana durante 6-7 semanas</p>
+                    <p><b>INVIERNO INTENSIVO:</b>Puedes aprovechar las vacaciones de Enero para acreditar el idioma en 4 semanas, asistiendo 5 horas diarias al idioma</p>
+                    <p><b>SEMESTRE:</b>En cualquier semestre es posible cargar un dioma, asistiras 5 horas a la semana a lo largo del semestre</p>
+                    <h1>¿Qué idiomas ofrece el ITP?</h1>
+                    
+                    <p><b>Inglés:</b>Podrás acreditar este idioma con un Examen Toefl o bien, acreditando 5 niveles de Básico e Intermedio</p>
+                    <p><b>Alemán:</b>Otra opción es cursar alemán en nivel Básico e Intermedio</p>
+                    
+                    <h1>PARA MÁS INFORMACIÓN PUEDES CONSULTAR:</h1>
+                    <br>
+                    <p><i class="fa-brands fa-facebook"></i> <a
+                            href="https://www.facebook.com/IdiomasTecnologicodepUebla?mibextid=ZbWKwL">IDIOMAS ITP</a></p>
+                    <p><i class="fa-solid fa-globe"></i> <a href="http://siecle.itpuebla.edu.mx/">SITEC
+                           CLE</a>
+                    </p>
+                    <p><i class="fa-solid fa-globe"></i> <a href="https://idiomastecpueblacle.blogspot.com/">BLOG IDIOMAS ITP</a>
+                 </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+    <!-- PESTAÑA DE INFORMACIÓN GENERAL-->
+
+    <div class="info-caja show-display ">
+        <div class="cabeza-cita-caja">
+            <h1>CALENDARIO</h1>
+        </div>
+        <hr>
+        <div class="plano-itp">
+            <img src="img/CALENDARIO.png" alt="classes">
+        </div>
+        <div class="cabeza-cita-caja">
+            <h1>MAPA ITP</h1>
+        </div>
+        <hr>
+        <div class="plano-itp">
+            <img src="img/PLANO.jpg" alt="classes">
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

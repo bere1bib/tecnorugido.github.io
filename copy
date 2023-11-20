@@ -1,0 +1,379 @@
+/*
+  @media (max-width:481px) {
+    body{
+      height: 92.5vh;
+    }
+  }
+
+  .contenedor-principal {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(0, 7, 84, 0.25);
+    backdrop-filter: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /*Estilo para el formulario*/
+  .form-acceso{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 25;
+    display: none;
+  }
+
+  .form-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    cursor:pointer;
+  }
+
+  .form-acceso-datos{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(0, 2, 37);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .form-encabezado{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form-encabezado span{
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #b79b48;
+  }
+  .ingresar-encabezado{
+    border-bottom: 2px solid #b79b48;
+  }
+  .contenedor-formulario{
+    display: flex;
+    width: 700px;
+    position: relative;
+    top: 2em;
+    transition: .5s;
+    /* justify-content: space-between; */
+  }
+  .contenedor-formulario .ingresar{
+    position: relative;
+    width: 350px;
+    padding: 1em;
+  }
+  .contenedor-formulario .registrar{
+    position: relative;
+    width: 350px;
+    padding: 1em;
+  }
+
+  .contenedor-formulario form input{
+    width: 100%;
+    outline: none;
+    height: 2.5em;
+    color: #634f13;
+    padding: .5em;
+    font-size: 1.1em;
+    margin: .2em 0 ;
+    border-radius: 4px;
+    border: none;
+    font-family: sans-serif;
+    letter-spacing: 0;
+  }
+  .ingresar-btn, .registrar-btn{
+    cursor: pointer;
+  }
+
+
+  /* user details  */
+  
+  .user-details{
+    width: 250px;
+    position: absolute;
+    z-index: 25;
+    top: 5em;
+    right: 1em;
+    border-radius: 12px;
+    overflow: hidden;
+    display: none;
+  }
+  .user-details-container{
+    position: relative;
+    display: flex;
+    left: 0;
+    background: rgb(157, 157, 157);
+    width: 500px;
+    transition: .5s;
+  }
+  .user-box{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: #b79b48;
+    text-align: center;
+    border-radius: 12px;
+    padding: .3em;
+  }
+  .user-close{
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  .user-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    margin-top: .5em;
+    background-color: #989898;
+  }
+  .user-image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    display: none;
+  }
+  .user-name{
+    font-size: 2em;
+  }
+  .user-sorting{
+    padding: 2px;
+    border-radius: 4px;
+    background-color: #ff8c00;
+    cursor: pointer;
+  }
+  .user-details div{
+    font-family: sans-serif;
+    letter-spacing: 0;
+  }
+  .user-email,.user-password{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: .5em 0;
+    padding: .2em .2em .2em .5em;
+    border: 1px solid #000;
+    text-align: left;
+    height: 25px;
+  }
+  .user-change{
+    width: 100%;
+    padding: .5em 0;
+    background-color: rgb(0, 145, 255);
+    cursor: pointer;
+    color: #fff;
+  }
+  .logout-remove{
+    position: relative;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    color: #fff;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+  .user-logout{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline;
+    padding: 8px 0;
+    background-color: rgb(255, 136, 0);
+    border-radius: 0 0 0 12px;
+    cursor: pointer;
+  }
+  .user-remove{
+    border-radius: 0 0 12px 0;
+    position: relative;
+    width: 50%;
+    padding: 8px 0;
+    background-color:red;
+  }
+  .edit-img{
+    position: absolute;
+    color: #989898;
+    bottom: .5em;
+    right: .5em;
+    padding: .3em;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  #upload-img{
+    display: none;
+  }
+  
+  /* user-change form  //////////////////////////// */
+  .user-details-change{
+    width: 50%;
+    padding: 1em;
+  }
+  .change-form{
+    margin-top: 2em;
+  }
+  .change-form input{
+    width: 100%;
+    height: 35px;
+    margin: .2em 0;
+    padding-left: .5em;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    letter-spacing: 0;
+  }
+  .change-btn{
+    color: #fff;
+    background-color: #0051d2;
+    cursor: pointer;
+  }
+  .cancel-btn{
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+  }
+  
+  /* header //////////// */
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #b79b48;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .header-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2em;
+  }
+  
+  .logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  /* title  */
+  .title {
+    position: relative;
+    font-size: 1.6em;
+    font-weight: bolder;
+    letter-spacing: 16px;
+    color: #492500;
+    height: 40px;
+    padding: 0 7px;
+  }
+  
+  .title span {
+    position: absolute;
+    font-size: .5em;
+    letter-spacing: 2px;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    color: #6b4203;
+  }
+  
+  /* user  */
+  .user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #a57833;
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+  
+  .user img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @media (max-width:761px) {
+    .header{
+      border-radius: 0;
+    }
+  }
+  @media (max-width:481px) {
+    .header-nav{
+      padding: 0 1em;
+    }
+    .title{
+      font-size: 1.4em;
+      top: .15em;
+      letter-spacing: 10.5px;
+    }
+    .title span{
+      top: 2.3em;
+      font-size: .4em;
+    }
+    .user{
+      height: 40px;
+      width: 40px;
+    }
+    .logo{
+      height: 40px;
+      width: 40px;
+    }
+  }
+  @media (max-width:375px) {
+    .header-nav{
+      padding: 0 .7em;
+    }
+    .title{
+      font-size: 1.2em;
+      top: .2em;
+      letter-spacing: 10px;
+    }
+    .title span{
+      top: 2.6em;
+      font-size: .4em;
+      letter-spacing: 2px;
+    }
+    .user{
+      height: 35px;
+      width: 35px;
+    }
+  }
+  */
