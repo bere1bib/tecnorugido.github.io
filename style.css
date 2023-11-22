@@ -693,11 +693,13 @@ body {
 }
 
 @media (max-width:500px) {
-  .reticula {
+  .reticula{
     left: 0em;
     top: 72px;
     bottom: 18%;
   }
+
+ 
 
   .cursos {
     justify-content: center;
@@ -865,6 +867,7 @@ body {
     top: 72px;
     bottom: 180px;
     height: 40em;
+    width:auto;
   }
   .cabeza-cita-caja{
     display:flex;
@@ -933,6 +936,12 @@ body {
     bottom: 15%;
     width: 100%;
   }
+  .beca {
+    left: 0em;
+    top: 72px;
+    bottom: 15%;
+    width: 100%;
+  }
 
   .info-cita-caja{
     background-color: #e6e6e6;
@@ -941,6 +950,7 @@ body {
     background-color: #e6e6e6;
     width: 100%;
   }
+  
 
   .galeria {
     display: block;
@@ -950,7 +960,15 @@ body {
     display:block;
     
   }
+  .info-caja{
+    left: 0em;
+    top: 72px;
+    bottom: 18%;
+  }
+  .becas{
+    background-color: #e6e6e6;
+    width: 100%;
+  }
 }   
-
 
 
